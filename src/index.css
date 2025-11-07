@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: "Red Hat Display";
+    font-weight: 400; /* Regular */
+    font-style: normal;
+    src: url("/assets/fonts/red-hat-display-regular.woff2") format("woff2"),
+      url("/assets/fonts/red-hat-display-regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Red Hat Display";
+    font-weight: 600; /* Semibold */
+    font-style: normal;
+    src: url("/assets/fonts/red-hat-display-semibold.woff2") format("woff2"),
+      url("/assets/fonts/red-hat-display-semibold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Red Hat Display";
+    font-weight: 700; /* Bold */
+    font-style: normal;
+    src: url("/assets/fonts/red-hat-display-bold.woff2") format("woff2"),
+      url("/assets/fonts/red-hat-display-bold.woff") format("woff");
+  }
+
+  html {
+    font-family: "Red Hat Display", sans-serif;
+  }
+}
