@@ -2,14 +2,14 @@
   "compilerOptions": {
     "composite": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ES2023",
-    "lib": ["ES2023"],
-    "module": "ESNext",
+    "target": "ES2022", 
+    "lib": ["ES2022"],
+    "module": "NodeNext", 
+    "moduleResolution": "NodeNext",
     "types": ["node"],
     "skipLibCheck": true,
-
-    /* Bundler mode (Corrigido) */
-    // Removemos a linha problemática 'moduleResolution' aqui.
+    "allowSyntheticDefaultImports": true, 
+    
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
 
