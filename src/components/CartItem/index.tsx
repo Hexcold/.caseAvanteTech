@@ -1,7 +1,7 @@
 import React from "react";
-import type { CartItem as CartItemType } from "@/types";
-import { useCart } from "@/hooks/useCart";
-import { formatCurrency } from "@/utils/formatCurrency";
+import type { CartItem as CartItemType } from "../../types";
+import { useCart } from "../../hooks/useCart";
+import { formatCurrency } from "../../utils/formatCurrency";
 
 import IconRemoveUrl from "@/assets/icon-remove-item.svg";
 

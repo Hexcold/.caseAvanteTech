@@ -6,8 +6,11 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    // 1. CORREÇÃO: Trocamos para 'Node' e removemos as linhas 'baseUrl' e 'paths'
+    // A configuração do atalho '@' agora será feita APENAS no vite.config.ts,
+    // o que agrada ao TypeScript moderno.
+    "moduleResolution": "node", 
+    
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -16,15 +19,8 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-
-    "ignoreDeprecations": "6.0",
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import type { Product } from "@/types";
-import { useCart } from "@/hooks/useCart";
-import { formatCurrency } from "@/utils/formatCurrency";
-import IconCartUrl from "@/assets/icon-add-to-cart.svg";
+import type { Product } from "../../types";
+import { useCart } from "../../hooks/useCart";
+import { formatCurrency } from "../../utils/formatCurrency";
+import IconCartUrl from "../../assets/icon-add-to-cart.svg";
 
 interface ProductCardProps {
   product: Product;

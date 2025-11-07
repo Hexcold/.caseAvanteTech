@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import type { Product } from "@/types";
-import { getProducts } from "@/services/productService";
-import ProductCard from "@/components/ProductCard";
-import CartSidebar from "@/components/CartSidebar";
+import type { Product } from "../../types";
+import { getProducts } from "../../services/productService";
+import ProductCard from "../../components/ProductCard";
+import CartSidebar from "../../components/CartSidebar";
 
 const Shop: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);

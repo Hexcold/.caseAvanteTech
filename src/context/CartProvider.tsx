@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import type { ReactNode, FC } from "react";
-import type { CartItem, Product } from "@/types";
+import type { CartItem, Product } from "../types";
 import { CartContext } from "./CartContext";
 
 interface CartProviderProps {

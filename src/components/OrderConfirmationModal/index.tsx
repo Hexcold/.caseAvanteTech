@@ -1,7 +1,7 @@
 import React from "react";
-import type { CartItem } from "@/types";
-import { formatCurrency } from "@/utils/formatCurrency";
-import IconOrderConfirmed from "@/assets/icon-order-confirmed.svg";
+import type { CartItem } from "../../types";
+import { formatCurrency } from "../../utils/formatCurrency";
+import IconOrderConfirmed from "../../assets/icon-order-confirmed.svg";
 
 interface OrderConfirmationModalProps {
   cart: CartItem[];

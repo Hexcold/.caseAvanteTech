@@ -2,10 +2,10 @@ import { describe, it, expect } from "vitest";
 import { renderHook, act } from "@testing-library/react";
 import React from "react";
 
-import { CartProvider } from "@/context/CartProvider";
-import { useCart } from "@/hooks/useCart";
+import { CartProvider } from "../context/CartProvider";
+import { useCart } from "../hooks/useCart";
 
-import type { Product } from "@/types";
+import type { Product } from "../types";
 import type { PropsWithChildren } from "react";
 
 const mockProductA: Product = {

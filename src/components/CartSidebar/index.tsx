@@ -1,13 +1,13 @@
 // src/components/CartSidebar/index.tsx
 import React from "react";
-import { useCart } from "@/hooks/useCart";
-import { formatCurrency } from "@/utils/formatCurrency";
-import IconEmptyCart from "@/assets/illustration-empty-cart.svg";
-import CartItem from "@/components/CartItem";
+import { useCart } from "../../hooks/useCart";
+import { formatCurrency } from "../../utils/formatCurrency";
+import IconEmptyCart from "../../assets/illustration-empty-cart.svg";
+import CartItem from "../../components/CartItem";
 
-import OrderConfirmationModal from "@/components/OrderConfirmationModal";
+import OrderConfirmationModal from "../../components/OrderConfirmationModal";
 
-import IconCarbonNeutralUrl from "@/assets/icon-carbon-neutral.svg";
+import IconCarbonNeutralUrl from "../../assets/icon-carbon-neutral.svg";
 
 const CartSidebar: React.FC = () => {
   const { cart, totalItems, cartTotal, clearCart } = useCart();
